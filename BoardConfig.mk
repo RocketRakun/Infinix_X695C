@@ -35,6 +35,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 BOARD_KERNEL_CMDLINE := \
@@ -57,7 +58,8 @@ BOARD_MKBOOTIMG_ARGS += \
     --kernel_offset $(BOARD_KERNEL_OFFSET) \
     --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
     --second_offset $(BOARD_SECOND_OFFSET) \
-    --tags_offset $(BOARD_TAGS_OFFSET)
+    --tags_offset $(BOARD_TAGS_OFFSET) \
+    --dtb $(TARGET_PREBUILT_DTB)
 
 # AVB
 BOARD_AVB_ENABLE := true
