@@ -158,8 +158,6 @@ TW_EXCLUDE_LPDUMP := true
 TW_EXCLUDE_TZDATA := true
 TW_EXCLUDE_PYTHON := true
 TW_EXCLUDE_TWRPAPP := true
-TW_BUILD_DATE := $(shell date +%Y%m%d)
-TW_BUILD_DATE_UTC := $(shell date +%s)
 
 # Storage
 TW_HAS_MTP := true
@@ -184,8 +182,4 @@ TARGET_SCREEN_HEIGHT := 2460
 TW_INCLUDE_F2FS := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
-TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_LOGICAL := true
-
-# Maintainer
-TW_DEVICE_VERSION := Infinix-X695C | RocketRakun ft-excaliburXD
