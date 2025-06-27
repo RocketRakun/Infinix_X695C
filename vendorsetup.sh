@@ -53,8 +53,6 @@ export FOX_DELETE_AROMAFM=1
 export FOX_REMOVE_AAPT=1
 export FOX_ENABLE_APP_MANAGER=1
 export OF_ENABLE_LPTOOLS=1
-export FOX_ASH_IS_BASH=1
-export FOX_USE_BASH_SHELL=1
 export FOX_USE_NANO_EDITOR=1
 export FOX_USE_TAR_BINARY=1
 export FOX_USE_SED_BINARY=1
@@ -71,5 +69,5 @@ export | grep "FOX" >> $FOX_BUILD_LOG_FILE
 export | grep "OF_" >> $FOX_BUILD_LOG_FILE
 export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
 export | grep "TW_" >> $FOX_BUILD_LOG_FILE
- 	fi
+  fi
 fi
