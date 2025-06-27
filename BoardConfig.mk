@@ -59,7 +59,8 @@ BOARD_MKBOOTIMG_ARGS += \
     --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
     --second_offset $(BOARD_SECOND_OFFSET) \
     --tags_offset $(BOARD_TAGS_OFFSET) \
-    --dtb_offset $(BOARD_DTB_OFFSET)
+    --dtb_offset $(BOARD_DTB_OFFSET) \
+    --dtb $(TARGET_PREBUILT_DTB)
 
 # AVB
 BOARD_AVB_ENABLE := true
